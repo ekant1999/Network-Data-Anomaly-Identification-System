@@ -1,0 +1,27 @@
+
+# Data files
+data/raw/*
+data/processed/*
+*.csv
+*.txt
+
+# Model files
+models/saved_models/*
+*.pkl
+*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.pyc
+
+# Environment
+venv/
+env/
+.env
+
+# Large files
+*.zip
+*.tar.gz
