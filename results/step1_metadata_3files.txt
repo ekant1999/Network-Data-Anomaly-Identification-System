@@ -1,0 +1,16 @@
+================================================================================
+PREPROCESSING STEP 1 METADATA
+================================================================================
+
+Files Processed:
+  1. TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+  2. TrafficLabelling /Wednesday-workingHours.pcap_ISCX.csv
+  3. TrafficLabelling /Tuesday-WorkingHours.pcap_ISCX.csv
+
+Total Rows: 1,354,477
+Total Columns: 86
+
+Rows per Source File:
+  Wednesday-workingHours: 684,093
+  Tuesday-WorkingHours: 444,722
+  Friday-WorkingHours-Afternoon-DDos: 225,662
