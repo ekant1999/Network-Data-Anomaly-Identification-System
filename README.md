@@ -6,13 +6,13 @@ A comprehensive machine learning system for identifying anomalies in network dat
 
 This project implements a complete end-to-end Network Intrusion Detection System (NIDS) that analyzes network traffic data to identify malicious patterns and anomalies. The system processes network flow data from the CICIDS 2017 dataset through a 4-step pipeline: Data Preprocessing, Outlier Detection & Removal, Feature Engineering, and Model Training & Evaluation. The best performing model achieves **99.76% accuracy** with **99.41% F1-Score** and **99.98% ROC-AUC** for DoS/DDoS attack detection.
 
-Dataset Overview
+## Dataset Overview
 This is the overview of our dataset that has been used.
-Name: CIC IDS 2017 (Canadian Institute for Cybersecurity Intrusion Detection System 2017)
-Source: University of New Brunswick, Canadian Institute for Cybersecurity
-Type: Network Intrusion Detection Dataset
-Format: GeneratedLabelledFlows (CSV files organized by day)
-Reference: https://deepwiki.com/rokibulroni/CIC-IDS-2017-Dataset/3-data-acquisition-and-verification
+- **Name:** CIC IDS 2017 (Canadian Institute for Cybersecurity Intrusion Detection System 2017)
+- **Source:** University of New Brunswick, Canadian Institute for Cybersecurity
+- **Type:** Network Intrusion Detection Dataset
+- **Format:** GeneratedLabelledFlows (CSV files organized by day)
+- **Reference:** [CIC-IDS-2017 Dataset Documentation](https://deepwiki.com/rokibulroni/CIC-IDS-2017-Dataset/3-data-acquisition-and-verification)
 
 We chose this dataset because of its comprehensive coverage of the attack types and the feature sets which cover different kinds of attack types.
 ## Features
