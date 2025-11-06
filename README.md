@@ -6,6 +6,15 @@ A comprehensive machine learning system for identifying anomalies in network dat
 
 This project implements a complete end-to-end Network Intrusion Detection System (NIDS) that analyzes network traffic data to identify malicious patterns and anomalies. The system processes network flow data from the CICIDS 2017 dataset through a 4-step pipeline: Data Preprocessing, Outlier Detection & Removal, Feature Engineering, and Model Training & Evaluation. The best performing model achieves **99.76% accuracy** with **99.41% F1-Score** and **99.98% ROC-AUC** for DoS/DDoS attack detection.
 
+Dataset Overview
+This is the overview of our dataset that has been used.
+Name: CIC IDS 2017 (Canadian Institute for Cybersecurity Intrusion Detection System 2017)
+Source: University of New Brunswick, Canadian Institute for Cybersecurity
+Type: Network Intrusion Detection Dataset
+Format: GeneratedLabelledFlows (CSV files organized by day)
+Reference: https://deepwiki.com/rokibulroni/CIC-IDS-2017-Dataset/3-data-acquisition-and-verification
+
+We chose this dataset because of its comprehensive coverage of the attack types and the feature sets which cover different kinds of attack types.
 ## Features
 
 - **Complete ML Pipeline**: 4-step end-to-end pipeline from data loading to model evaluation
@@ -127,7 +136,7 @@ OUTPUT_DIR = "/path/to/output/directory"
 - **Missing Value Handling**: Fills numeric columns with median (0.09% missing)
 - **Duplicate Removal**: Removes feature-identical rows (0.72% duplicates)
 - **Data Type Conversion**: Ensures proper data types for all columns
-
+-**Label Distribution Analysis**: Identifies the class imbalance ratios across all the attack categories. 
 ### Outlier Detection & Removal
 - **Domain Violations**: Detects and removes negative values in constrained columns
 - **Zero-Duration Flows**: Removes flows with zero duration (causes division errors)
@@ -218,8 +227,4 @@ This project is open source and available under the MIT License.
 - [ ] API for deployment (Flask/FastAPI)
 - [ ] Docker containerization
 - [ ] CI/CD pipeline setup
-
-## Contact
-
-For questions or issues, please open an issue on the GitHub repository.
 
